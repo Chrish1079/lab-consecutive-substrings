@@ -1,2 +1,15 @@
 Please add your pseudocode to this file
 And a written explanation of your solution
+
+Solution Description:
+The function `consecutiveSubstrings` generates all possible consecutive substrings from a given string.
+It uses two nested loops: 
+- The outer loop selects the starting index of the substring.
+- The inner loop selects the ending index (non-inclusive).
+Each substring is extracted using `string.slice(start, end)` and added to a results array.
+
+Example:
+For 'abc', the function produces ['a', 'ab', 'abc', 'b', 'bc', 'c'].
+
+Time Complexity:
+O(n²) — Because for each character in the string, the function iterates through the remaining characters to form substrings.
